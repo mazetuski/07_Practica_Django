@@ -1,0 +1,24 @@
+# Environment folders
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE Config
+.idea/
+.vscode/
+
+# Database files
+db.sqlite3
+
+# Log files
+*.log
+
+# SSOO Files
+.DS_Store
+Thumbs.db
+
+# Archivos de media
+media/
