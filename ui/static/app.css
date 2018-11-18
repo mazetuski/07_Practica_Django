@@ -1,0 +1,31 @@
+body{
+    font-size: 16px;
+}
+
+.window-height{
+    min-height: 88vh;
+}
+
+footer{
+    min-height: 10vh;
+}
+
+nav a.sidenav-trigger{
+    display: inline;
+    margin: 0;
+}
+
+.title_pages {
+    margin: 2rem 0 3rem 0;
+}
+
+nav .nav-title{
+    margin: 0;
+    padding:     0;
+}
+
+nav .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+<div class="col s12 m4 l3">
+    <div class="card">
+        <div class="card-image">
+            {% if post.url_assert %}
+                <img src="{{ post.url_assert }}">
+            {% endif %}
+            <span class="card-title">{{ post.title }}</span>
+        </div>
+        <div class="card-content">
+            <p>Author: {{ post.owner }}</p>
+            <p>{{ post.description_short }}</p>
+        </div>
+        <div class="card-action center-align">
+            <a href="#">View</a>
+        </div>
+    </div>
+</div>
