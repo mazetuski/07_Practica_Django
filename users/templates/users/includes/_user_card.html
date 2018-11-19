@@ -1,0 +1,11 @@
+<div class="col s12 m4 l3">
+    <div class="card">
+        <div class="card-content">
+            <p>{{ user.first_name }} {{ user.last_name }}</p>
+            <p>Number of posts: {{ user.post_set.all|length }}</p>
+        </div>
+        <div class="card-action center-align">
+            <a href="#">View</a>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,7 @@ class HomeView(ListView):
     model = Post
     paginate_by = 10
     template_name = 'blog/home.html'
+    ordering = ['-pub_date']
 
 
 @method_decorator(login_required, name='dispatch')
