@@ -10,6 +10,8 @@ footer{
     min-height: 10vh;
 }
 
+/* NAV */
+
 nav a.sidenav-trigger{
     display: inline;
     margin: 0;
@@ -28,4 +30,26 @@ nav .nav-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav .nav-wrapper .nav-sign a{
+    color: #000;
+    padding: 0 .5rem;
+}
+
+nav .nav-wrapper .nav-sign a:hover {
+    text-decoration: underline;
+}
+
+/* Sidenav */
+
+.sidenav h4 {
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+/* UTILS */
+
+.margin-b {
+    margin-bottom: 2rem !important;
 }
