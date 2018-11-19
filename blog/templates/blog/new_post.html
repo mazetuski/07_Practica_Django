@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content_header %}
+    New Post
+{% endblock %}
+
+{% block content %}
+    <form method="post" class="row">
+        {% csrf_token %}
+        {# Include form template #}
+        {% include "includes/_form_template_material.html" with form=form %}
+    </form>
+{% endblock %}
