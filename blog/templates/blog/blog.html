@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content_header %}
-    Last Updated Blogs
+    Blog of {{ user.first_name }} {{ user.last_name }}
 {% endblock %}
 
 {% block content %}
     <div class="row window-height">
-        {% for user_loop in object_list %}
-            {% include 'users/includes/_user_card.html' with user_obj=user_loop %}
+        {% for post in object_list %}
+            {% include 'blog/includes/_post_card.html' with post=post %}
         {% endfor %}
     </div>
 {% endblock %}

@@ -2,14 +2,15 @@
 {% for hidden in form.hidden_fields %}
     {{ hidden }}
 {% endfor %}
+{{ form.non_field_errors }}
 {# Include the visible fields #}
 {% for field in form.visible_fields %}
-    <div class="input-field col s12 m8 l6 offset-m2 offset-l3">
+    <div class="input-field {{ input_class }}">
         {{ field.errors }}
         {{ field }}
         {{ field.label_tag }}
     </div>
 {% endfor %}
-<div class="col s12 m8 l6 offset-m2 offset-l3 right-align">
+<div class="{{ input_class }} right-align">
     <button class="btn waves-effect waves-light" type="submit">Send</button>
 </div>
