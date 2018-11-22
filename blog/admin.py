@@ -12,7 +12,7 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['title', 'category__name', 'description_long', 'owner__first_name']
     fieldsets = [
         [None, {
-            'fields': ['title', 'description_short', 'description_long', 'url_assert', 'category', 'owner']
+            'fields': ['title', 'description_short', 'description_long', 'url_assert', 'category', 'owner', 'pub_date']
         }]
     ]
 

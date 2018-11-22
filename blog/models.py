@@ -16,7 +16,7 @@ class Post(models.Model):
     description_short = models.CharField(max_length=500)
     description_long = models.CharField(max_length=1500)
     url_assert = models.URLField()
-    pub_date = models.DateTimeField(auto_now_add=True)
+    pub_date = models.DateTimeField()
     last_modifications = models.DateTimeField(auto_now=True)
     category = models.ManyToManyField(Category)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)

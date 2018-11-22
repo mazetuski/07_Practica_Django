@@ -57,15 +57,6 @@
     {% block content %}{% endblock %}
 </main>
 
-{# FOOTER #}
-{% block footer %}
-    <footer class="grey darken-4 white-text valign-wrapper">
-        <div class="container">
-            Django Pop. All rights reserved &copy; {% now 'Y' %}
-        </div>
-    </footer>
-{% endblock %}
-
 {# JAVASCRIPTS #}
 {% block javascripts %}
     <script src="{% static 'materialize.min.js' %}"></script>

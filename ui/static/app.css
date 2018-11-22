@@ -1,6 +1,5 @@
 body{
     font-size: 16px;
-    min-height: 100vh;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap !important;
@@ -10,15 +9,9 @@ body{
     padding: 0;
 }
 
-body > footer,
 body > main,
 body > header {
     flex: 0 0 100%;
-}
-
-body > footer {
-    align-self: flex-end;
-    height: 100px;
 }
 
 .title_pages {

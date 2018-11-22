@@ -12,5 +12,6 @@ class PostForm(forms.ModelForm):
             'description_short',
             'description_long',
             'url_assert',
-            'category'
+            'category',
+            'pub_date'
         ]

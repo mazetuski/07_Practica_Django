@@ -11,7 +11,7 @@
             <p>{{ post.description_short }}</p>
         </div>
         <div class="card-action center-align">
-            <a href="#">View</a>
+            <a href="{% url 'post_detail' username=post.owner.username pk=post.id %}">View</a>
         </div>
     </div>
 </div>
