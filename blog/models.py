@@ -19,4 +19,7 @@ class Post(models.Model):
     pub_date = models.DateTimeField()
     last_modifications = models.DateTimeField(auto_now=True)
     category = models.ManyToManyField(Category)
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
+
+    def __str__(self):
+        return self.title
