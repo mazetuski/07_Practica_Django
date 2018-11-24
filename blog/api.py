@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
@@ -14,8 +15,9 @@ class PostListViewSet(ListAPIView, GenericViewSet):
 
     permission_classes = [IsAuthenticatedOrReadOnly]
     serializer_class = PostListSerializer
-    filter_backends = [OrderingFilter, SearchFilter]
+    filter_backends = [OrderingFilter, SearchFilter, DjangoFilterBackend]
     search_fields = ['title', 'description_short']
+    filter_fields = ['category']
     ordering = ['title', 'pub_date']
 
     def get_queryset(self):

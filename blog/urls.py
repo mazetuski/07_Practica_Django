@@ -13,5 +13,5 @@ urlpatterns = [
     path('blogs/<pk>', BlogView.as_view(), name='blog'),
     path('blogs/<username>/<int:pk>', PostDetailView.as_view(), name='post_detail'),
     path('api/1.0/', include(router.urls), name='post_api'),
-    path('api/1.0/blog/<int:user>', PostListViewSet.as_view({'get': 'list'}), name='post_list_api')
+    path('api/1.0/blog/<int:user>/', PostListViewSet.as_view({'get': 'list'}), name='post_list_api')
 ]
