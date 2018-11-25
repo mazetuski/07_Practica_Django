@@ -2,6 +2,24 @@
 
 ## Installation
 
+- Create VirtualEnv
+
+```
+virtualenv -p python3 envname
+```
+
+- Activate VirtualEnv
+
+```
+source venv/bin/activate
+```
+
+- Install Requirements
+
+```
+pip install -r requirements.txt
+```
+
 - Update database
 
 ```

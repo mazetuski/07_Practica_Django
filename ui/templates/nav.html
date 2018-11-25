@@ -9,5 +9,7 @@
     </li>
     <li><a class="waves-effect" href="{% url 'home' %}">Home</a></li>
     <li><a class="waves-effect" href="{% url 'user_list' %}">Blogs</a></li>
-    <li><a class="waves-effect" href="{% url 'new_post' %}">New Post</a></li>
+    {% if user.is_authenticated %}
+        <li><a class="waves-effect" href="{% url 'new_post' %}">New Post</a></li>
+    {% endif %}
 </ul>

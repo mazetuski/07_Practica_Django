@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-content">
             <p>{{ user_obj.first_name }} {{ user_obj.last_name }}</p>
-            <p>Number of posts: {{ user_obj.post_set.all|length }}</p>
+            <p>Number of posts: {{ user_obj.posts.all|length }}</p>
         </div>
         <div class="card-action center-align">
             <a href="{% url 'blog' user_obj.username %}">View</a>
