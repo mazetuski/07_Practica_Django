@@ -19,6 +19,7 @@ class HomeView(ListView):
     def get_queryset(self):
         return Post.objects.filter(pub_date__lte=datetime.now()).order_by('-pub_date')
 
+
 class BlogView(ListView):
     model = Post
     paginate_by = 10
