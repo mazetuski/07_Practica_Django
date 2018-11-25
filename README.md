@@ -11,7 +11,7 @@ virtualenv -p python3 envname
 - Activate VirtualEnv
 
 ```
-source venv/bin/activate
+source envname/bin/activate
 ```
 
 - Install Requirements
