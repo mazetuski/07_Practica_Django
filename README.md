@@ -49,7 +49,6 @@ python manage.py runserver
 #### Get all blogs
 - Method: GET
 - Url: api/1.0/blogs/
-- Need authentication
 
 | Param     | Type    | Help  |
 | :-------: |:-------:| ----- |
